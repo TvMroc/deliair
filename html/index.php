@@ -1,8 +1,10 @@
 <html>
     <head>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <p id="yes">world</p>
-        <script src="js/main.js"></script>
+        <button id="rmove" onclick="RMove()" ></button>
+        <script src="js/main.jsx"></script>
     </body>
 </html>
