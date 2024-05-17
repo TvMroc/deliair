@@ -2,20 +2,6 @@
     padding: 0;
     margin: 0;
 }
-#rmove {
-   height: 25px;
-   transition: margin-left 0.2s, margin-top 0.2s;
-   background-color: darkturquoise;
-}
-.square {
-    position: absolute;
-    top: 40%;
-    right: 50%;
-    width: 180px;
-    height: 180px;
-    border: darkred 2px solid;
-    z-index: -1;
-}
 .info {
     position: absolute;
     z-index: -1;
@@ -27,3 +13,23 @@
     background-color: #66C3F4;
 }
 
+
+
+
+
+
+/* random */
+#rmove {
+    height: 25px;
+    transition: margin-left 0.2s, margin-top 0.2s;
+    background-color: darkturquoise;
+ }
+ .square {
+     position: absolute;
+     top: 40%;
+     right: 50%;
+     width: 180px;
+     height: 180px;
+     border: darkred 2px solid;
+     z-index: -1;
+ }
