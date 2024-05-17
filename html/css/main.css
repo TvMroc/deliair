@@ -13,9 +13,20 @@
     background-color: #66C3F4;
 }
 
-
-
-
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px 100px;
+    border-bottom: 4px rgb(200, 200, 200) solid;
+}
+.bar a {
+    padding: 0px 12px;
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
 
 
 /* random */
