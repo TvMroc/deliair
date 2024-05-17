@@ -3,8 +3,8 @@ x = document.getElementById('yes');
 x.textContent = "hello";
 var randomcount = 0;
 const RMove = () => {
-    document.querySelector("#rmove").style.marginLeft = Math.floor(Math.random() * 100)+"dvw";
-    document.querySelector("#rmove").style.marginTop = Math.floor(Math.random() * 100)+"dvh";
+    document.querySelector("#rmove").style.marginLeft = Math.floor(Math.random() * 96)+"dvw";
+    document.querySelector("#rmove").style.marginTop = Math.floor(Math.random() * 96)+"dvh";
     randomcount++;
     document.querySelector("#counter").textContent = randomcount;
     
