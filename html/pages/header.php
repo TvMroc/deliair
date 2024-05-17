@@ -4,7 +4,7 @@
             <img src="../images/logo.png">
             <div>
                 <img src="../images/Rectangle24.png">
-                <img src="../images/Ellipse3.png">
+                <img class="account" src="../images/bob.png">
             </div>
         </div>
     </div>
