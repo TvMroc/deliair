@@ -10,7 +10,5 @@
     <?php
     include 'pages/header.php';
     ?>
-    <!--Nav -->
-    
 </body>
 </html>
