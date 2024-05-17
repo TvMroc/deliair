@@ -7,7 +7,9 @@
     <title>DeliAir</title>
 </head>
 <body>
-    include("")
+    <?php
+    include 'pages/header.php';
+    ?>
     <!--Nav -->
     
 </body>

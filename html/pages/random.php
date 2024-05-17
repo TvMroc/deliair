@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../css/main.css">
     </head>
     <body>
         <div class="info">
@@ -9,6 +9,6 @@
         </div>
         <button id="rmove" onclick="RMove()" >random</button>
         <div class="square"></div>
-        <script src="js/main.jsx"></script>
+        <script src="../js/main.jsx"></script>
     </body>
 </html>
