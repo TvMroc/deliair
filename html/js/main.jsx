@@ -2,9 +2,6 @@ console.log("hello world");
 x = document.getElementById('yes');
 x.textContent = "hello";
 var randomcount = 0;
-var cps = 0;
-var clickcount = 0;
-var time = false;
 const RMove = () => {
     document.querySelector("#rmove").style.marginLeft = Math.floor(Math.random() * 100)+"dvw";
     document.querySelector("#rmove").style.marginTop = Math.floor(Math.random() * 100)+"dvh";
@@ -22,18 +19,4 @@ const RMove = () => {
             alert("You won");
         }
     }, 210);
-}
-const timer = () => {
-    time = true;
-    setTimeout(function () {
-        time = false;
-        cps = clickcount/10;
-        document.querySelector("#cps").textContent = cps+" "+clickcount;
-        clickcount = 0;
-    }, 10000);
-}
-const count = () => {
-    if (time) {
-        clickcount++;
-    }
 }
