@@ -10,5 +10,6 @@
         <button id="rmove" onclick="RMove()" >random</button>
         <div class="square"></div>
         <script src="js/main.jsx"></script>
+        <div class="topbalk"></div>
     </body>
 </html>
