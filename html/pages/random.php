@@ -9,6 +9,6 @@
         </div>
         <button id="rmove" onclick="RMove()" >random</button>
         <div class="square"></div>
-        <script src="../js/main.jsx"></script>
+        <script src="../js/random.jsx"></script>
     </body>
 </html>
