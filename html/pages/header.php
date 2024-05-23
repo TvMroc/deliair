@@ -10,7 +10,7 @@
     </div>
     <div>
         <div class="bar">
-            <a href="">Zomervakantie</a>
+            <a href='./pages/zomervakantie.php'>Zomervakantie</a>
             <a href="">Last Minute</a>
             <a href="">Verre Reizen</a>
             <a href="">Vliegtickets</a>
