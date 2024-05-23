@@ -4,7 +4,13 @@
             <img src="../images/logo.png">
             <div>
                 <img src="../images/Rectangle24.png">
-                <img class="account" src="../images/bob.png">
+                <?php
+                    if (isset($_SESSION['user'])) {
+                        echo '<img class="account" src="../images/bob.png">';
+                    } else {
+                        echo '<a href="pages/login.php"><img class="account" src="../images/midway.png"></a>';
+                    }
+                ?>
             </div>
         </div>
     </div>
