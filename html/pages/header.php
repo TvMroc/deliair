@@ -17,11 +17,11 @@
     <div>
         <div class="bar">
             <a href='./pages/zomervakantie.php'>Zomervakantie</a>
-            <a href="">Last Minute</a>
-            <a href="">Verre Reizen</a>
-            <a href="">Vliegtickets</a>
-            <a href="">Stedetrips</a>
-            <a href="">Overig</a>
+            <a href="./pages/lastminute.php">Last Minute</a>
+            <a href="./pages/verrereizen.php">Verre Reizen</a>
+            <a href="./pages/vliegtickets.php">Vliegtickets</a>
+            <a href="./pages/stedetrips.php">Stedetrips</a>
+            <a href="./pages/overig.php">Overig</a>
         </div>
     </div>
 </header>
