@@ -9,7 +9,7 @@
                     if (isset($_SESSION['user'])) {
                         echo '<img class="account" src="../images/bob.png">';
                     } else {
-                        echo '<a href="pages/login.php"><img class="account" src="../images/midway.png"></a>';
+                        echo '<a href="'. $_SESSION['pages'] . 'login.php"><img class="account" src="../images/midway.png"></a>';
                     }
                 ?>
             </div>
@@ -17,12 +17,14 @@
     </div>
     <div>
         <div class="bar">
-            <a href='./pages/zomervakantie.php'>Zomervakantie</a>
-            <a href="./pages/lastminute.php">Last Minute</a>
-            <a href="./pages/verrereizen.php">Verre Reizen</a>
-            <a href="./pages/vliegtickets.php">Vliegtickets</a>
-            <a href="./pages/stedetrips.php">Stedetrips</a>
-            <a href="./pages/overig.php">Overig</a>
+            <?php
+            echo '<a href="./' . $_SESSION['pages'] . 'zomervakantie.php">Zomervakantie</a>';
+            echo '<a href="./' . $_SESSION['pages'] . 'lastminute.php">Last Minute</a>';
+            echo '<a href="./' . $_SESSION['pages'] . 'verrereizen.php">Verre Reizen</a>';
+            echo '<a href="./' . $_SESSION['pages'] . 'vliegtickets.php">Vliegtickets</a>';
+            echo '<a href="./' . $_SESSION['pages'] . 'stedetrips.php">Stedetrips</a>';
+            echo '<a href="./' . $_SESSION['pages'] . 'overig.php">Overig</a>';
+            ?>
         </div>
     </div>
 </header>

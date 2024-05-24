@@ -1,3 +1,7 @@
+<?php 
+session_start();
+$_SESSION['pages'] = "";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +11,8 @@
     <title>DeliAir</title>
 </head>
 <body>
-    <?php
+<?php
     include 'header.php';
-    ?>
+?>
 </body>
 </html>
