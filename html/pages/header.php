@@ -3,7 +3,9 @@
         <div class="bar">
             <a href='../index.php'><img src="../images/logo.png"></a>
             <div>
-                <a href='./pages/favorites.php'><img src="../images/Star 2.jpg" alt=""></a>
+                <?php
+                echo '<a href="./' . $_SESSION['pages'] . 'favorites.php"><img src="../images/Star 2.jpg"></a>';
+                ?>
                 <img src="../images/Rectangle24.png">
                 <?php
                     if (isset($_SESSION['user'])) {
