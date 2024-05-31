@@ -1,6 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .navbalkfavorites {
     width: 100%;
     height: 100px;
     /* placeholder colors v */
     background-color: gray;  
 }
+

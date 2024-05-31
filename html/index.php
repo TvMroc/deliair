@@ -14,5 +14,10 @@ $_SESSION['pages'] = "pages/";
     <?php
     include 'pages/header.php';
     ?>
+    <div class="indexdoos1">
+        <div class="indexblok1">
+            
+        </div>
+    </div>
 </body>
 </html>
