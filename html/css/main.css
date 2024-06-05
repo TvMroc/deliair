@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 4px rgb(200, 200, 200) solid;
 }
 
 /* 
