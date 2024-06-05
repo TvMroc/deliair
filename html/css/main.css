@@ -19,7 +19,17 @@
     justify-content: center;
     flex-direction: column;
 }
-
+.indexblok1{
+    width: 89vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border: 4px rgb(200, 200, 200) solid;
+    border-radius: 40px;
+}
 
 /* 
 */
