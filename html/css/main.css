@@ -19,10 +19,11 @@
     justify-content: center;
     flex-direction: column;
 }
-.indexdoos1{
-    width: 80vw;
-    height: 80vh;
-    background-color: black;
+.indexblok1{
+    width: 90vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
