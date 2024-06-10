@@ -12,10 +12,15 @@ $_SESSION['pages'] = "";
     <title>DeliAir</title>
 </head>
 
-<body>
+<body id="bodyindex">
     <?php
     include 'header.php';
     ?>
+    <div class="zomervakantiedoos1">
+        <div class="zomervakantieblok1">
+
+        </div>
+    </div>
 </body>
 
 </html>

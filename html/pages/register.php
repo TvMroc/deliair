@@ -28,6 +28,7 @@
                 <input type="submit" value="Register">
             </form>
             <a href="login.php">Login</a>
+            <a href="../index.php">Go home</a>
         </div>
     </div>
 </body>

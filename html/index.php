@@ -12,7 +12,7 @@ $_SESSION['pages'] = "pages/";
     <title>DeliAir</title>
 </head>
 
-<body>
+<body id="bodyindex">
     <?php
     include 'pages/header.php';
     ?>
@@ -22,7 +22,14 @@ $_SESSION['pages'] = "pages/";
     </header>
     <div class="indexdoos1" id='homepage-header'>
         <div class="indexblok1">
+            <div class="indexbalk1">
+                <div class="indexbalkbutton1"><a class="indexbuttontekst1">Countries</a></div>
+                <div class="indexbalkbutton1"><a class="indexbuttontekst1">-</a></div>
+                <div class="indexbalkbutton1"><a class="indexbuttontekst1">-</a></div>
+                <div class="indexbalkbutton1"><a class="indexbuttontekst1">-</a></div>
+                <div class="indexbalkbutton2"><a class="indexbuttontekst1">-</a></div>
 
+            </div>
         </div>
     </div>
 </body>
