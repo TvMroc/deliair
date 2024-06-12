@@ -17,7 +17,15 @@ $_SESSION['pages'] = "";
     include 'header.php';
     ?>
     <div class="favoritesdoos1">
-        
+        <div class="favoritesSpace1">
+
+        </div>
+        <div class="favoritesblok1">
+
+        </div>
+        <div class="favoritesSpace1">
+            
+        </div>
     </div>
 </body>
 
