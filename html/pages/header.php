@@ -4,6 +4,11 @@
             <a href='../'><img src="../images/logo.png"></a>
             <div>
                 <?php
+                if ($_SESSION['role'] > 2) {
+                    echo '<a href="./' . $_SESSION['pages'] . 'adminpanel.php">Admin panel</a>';
+                }
+                ?>
+                <?php
                 echo '<a href="./' . $_SESSION['pages'] . 'favorites.php"><img src="../images/Star 2.jpg"></a>';
                 ?>
                 <img src="../images/Rectangle24.png">
