@@ -14,7 +14,7 @@
                 <img src="../images/Rectangle24.png">
                 <?php
                 if (isset($_SESSION['user'])) {
-                    echo '<img class="account" src="../images/bob.png">';
+                    echo '<a href="' . $_SESSION['pages'] . 'account.php"><img class="account" src="../images/bob.png"></a>';
                 } else {
                     echo '<a href="' . $_SESSION['pages'] . 'login.php"><img class="account" src="../images/account.png"></a>';
                 }

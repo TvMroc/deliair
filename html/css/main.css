@@ -10,6 +10,12 @@
 #bodyindex{
     overflow: hidden; /* Hide scrollbars */
 }
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /* INDEX.PHP */
 .indexdoos1 {
     width: 100vw;
@@ -42,7 +48,7 @@
     border-bottom: 4px rgb(200, 200, 200) solid;
     border-radius: 40px;
 }
-.indexbalkbutton1{
+.indexbalkbutton {
     width: 20%;
     height: 100%;
     display: flex;
@@ -53,10 +59,13 @@
     border-right: 4px solid rgb(200, 200, 200);
     border-radius: 40px;
 }
+.hideindexbalkbutton {
+    display: none;
+}
 .indexbuttontekst1{
     font-size: 25px;
 }
-.indexbalkbutton1:hover {background-color: rgb(200, 200, 200);}
+.indexbalkbutton:hover {background-color: rgb(200, 200, 200);}
 .indexbalkbutton2:hover {background-color: rgb(200, 200, 200);}
 /* 
 /* Zomvervakantie.php */
@@ -144,10 +153,6 @@
     align-items: center;
 }
 
-.login {
-    margin-top: 35vh;
-}
-
 .form {
     display: flex;
     flex-direction: column;
@@ -193,3 +198,5 @@
 .form a {
     color: white;
 }
+
+/* Admin panel */
