@@ -140,11 +140,11 @@ body::-webkit-scrollbar {
     z-index: -1;
 }
 /* Favorites */
-.favoritesdoos1{
+/* .favoritesdoos1{
     height: 100vh;
     width: 99vw;
-    background-color: red;
-}
+    background-color: #ffffff;
+} */
 /* .. */
 /* Login */
 .container {
