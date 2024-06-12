@@ -11,7 +11,6 @@ $_SESSION['pages'] = "pages/";
     <link rel="stylesheet" href="css/main.css">
     <title>DeliAir</title>
 </head>
-
 <body id="bodyindex">
     <?php
     include 'pages/header.php';
@@ -27,8 +26,7 @@ $_SESSION['pages'] = "pages/";
                 <div class="indexbalkbutton1"><a class="indexbuttontekst1">-</a></div>
                 <div class="indexbalkbutton1"><a class="indexbuttontekst1">-</a></div>
                 <div class="indexbalkbutton1"><a class="indexbuttontekst1">-</a></div>
-                <div class="indexbalkbutton2"><a class="indexbuttontekst1">-</a></div>
-
+                <div class="indexbalkbutton1"><a class="indexbuttontekst1">Info</a></div>
             </div>
         </div>
     </div>

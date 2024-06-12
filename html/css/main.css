@@ -53,16 +53,6 @@
     border-right: 4px solid rgb(200, 200, 200);
     border-radius: 40px;
 }
-.indexbalkbutton2{
-    width: 20%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 40px;
-}
 .indexbuttontekst1{
     font-size: 25px;
 }
@@ -72,7 +62,7 @@
 /* Zomvervakantie.php */
 .zomervakantiedoos1{
     width: 100vw;
-    height: 77.5vh;
+    height: 100vh;
     background-color: white;
     display: flex;
     align-items: center;
@@ -81,7 +71,7 @@
 }
 .zomervakantieblok1{
     width: 89vw;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: baseline;
