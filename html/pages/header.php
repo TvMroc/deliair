@@ -4,7 +4,7 @@
             <a href='../'><img src="../images/logo.png"></a>
             <div>
                 <?php
-                if ($_SESSION['role']) {
+                if (isset($_SESSION['role'])) {
                     if ($_SESSION['role'] > 2) {
                         echo '<a href="./' . $_SESSION['pages'] . 'adminpanel.php">Admin panel</a>';
                     }
