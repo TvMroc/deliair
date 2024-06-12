@@ -29,6 +29,13 @@ $_SESSION['pages'] = "pages/";
                 <div class="indexbalkbutton1"><a class="indexbuttontekst1">Info</a></div>
             </div>
         </div>
+        <div class="indexblok2">
+            <div class="indexbalkbutton1"></div>
+            <div class="indexbalkbutton2"></div>
+            <div class="indexbalkbutton3"></div>
+            <div class="indexbalkbutton4"></div>
+            <div class="indexbalkbutton5"></div>
+        </div>
     </div>
 </body>
 
