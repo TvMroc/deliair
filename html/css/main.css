@@ -77,9 +77,69 @@ body::-webkit-scrollbar {
     color: black;
     font-size: 35px
 }
+.indextekst3{
+    color: black;
+    font-size: 35px
+}
+.indextekst3:hover {background-color: rgb(200, 200, 200);}
 .indexbalkbutton:hover {background-color: rgb(200, 200, 200);}
 .indexbalkbutton2:hover {background-color: rgb(200, 200, 200);}
 /* 
+/* Landen.php */
+.landendoos1{
+    width: 100vw;
+    height: 77.5vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.landenblok1{
+    width: 89%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: white;
+    border: 4px rgb(200, 200, 200) solid;
+    border-radius: 40px;
+}
+.landenblokin1{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    justify-content: center;
+}
+.landenblokin2{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+.landentekst1{
+    color: black;
+    font-size: 35px;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.landentekst2{
+    color: black;
+    font-size: 25px;
+    margin-left: 45px;
+}
+.countryimg{
+    width: 700px;
+    border-radius: 40px;
+}
+/*  */
 /* Zomvervakantie.php */
 .zomervakantiedoos1{
     width: 100vw;

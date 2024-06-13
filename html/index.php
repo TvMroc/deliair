@@ -30,7 +30,7 @@ $_SESSION['pages'] = "pages/";
                 <div onclick="selection('hideindexbalkbutton', 'indexbalkbutton5')" class="indexbalkbutton"><a class="indexbuttontekst1">Info</a></div>
             </div>
             <div class="indexblok2">
-                <div class="indexbalkbutton1 hideindexbalkbutton"><div class="indexbloktekst"><a class="indextekst2">-</a></div></div>
+                <div class="indexbalkbutton1 hideindexbalkbutton"><div class="indexbloktekst"><a class="indextekst2"><a class="indextekst2">Onze uitgelichte Landen:</a><a class="indextekst3" href="pages/denenmarken.php">Denenmarken</a><a class="indextekst3" href="pages/finland.php">Finland</a><a class="indextekst3" href="pages/indonesie.php">Indonesie</a></div></div>
                 <div class="indexbalkbutton2 hideindexbalkbutton"><div class="indexbloktekst"><a class="indextekst2">-</a></div></div>
                 <div class="indexbalkbutton3 hideindexbalkbutton"><div class="indexbloktekst"><a class="indextekst2">-</a></div></div>
                 <div class="indexbalkbutton4 hideindexbalkbutton"><div class="indexbloktekst"><a class="indextekst2">-</a></div></div>
