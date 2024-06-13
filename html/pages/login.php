@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/css/main.css">
     <title>Login</title>
 </head>
-
 <body>
+    <a class="back" onclick="history.back()">← Back<a>
     <div class="container">
         <div class="form login">
             <h1>Login</h1>
@@ -24,7 +24,6 @@
                 <input type="submit" value="Login">
             </form>
             <a href="register.php">Register</a>
-            <a href="../index.php">Go home</a>
         </div>
     </div>
 </body>
