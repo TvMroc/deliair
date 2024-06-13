@@ -65,6 +65,18 @@ body::-webkit-scrollbar {
 .indexbuttontekst1{
     font-size: 25px;
 }
+.indexbloktekst{
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+}
+.indextekst2{
+    color: black;
+    font-size: 35px
+}
 .indexbalkbutton:hover {background-color: rgb(200, 200, 200);}
 .indexbalkbutton2:hover {background-color: rgb(200, 200, 200);}
 /* 
