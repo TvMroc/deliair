@@ -1,7 +1,7 @@
 <?php 
 session_start();
 $_SESSION['pages'] = "";
-if (isset($_SESSION['user'])) {
+if (!isset($_SESSION['user'])) {
     header("Location: login.php");
 }
 ?>
@@ -68,8 +68,8 @@ if (isset($_SESSION['user'])) {
                 </div>
                 <input type="submit" value="Delete">
             </form>
+            <a href="logout.php">Logout</a>
         </div>
-        <button href="logout.php">Logout</button>
     </div>
 </body>
 
