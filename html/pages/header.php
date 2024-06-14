@@ -13,7 +13,9 @@
                 <?php
                 echo '<a href="./' . $_SESSION['pages'] . 'favorites.php"><img src="../images/Star 2.jpg"></a>';
                 ?>
-                <img src="../images/Rectangle24.png">
+                <?php
+                echo '<a href="./' . $_SESSION['pages'] . 'shoppingcart.php"><img src="../images/Rectangle24.png"></a>';
+                ?>
                 <?php
                 if (isset($_SESSION['user'])) {
                     echo '<a href="' . $_SESSION['pages'] . 'account.php"><img class="account" src="../images/bob.png"></a>';

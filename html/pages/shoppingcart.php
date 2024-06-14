@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['pages'] = "";
+$_SESSION['pages'] = "pages/";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,17 +10,11 @@ $_SESSION['pages'] = "";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <title>DeliAir</title>
+    <script src="./js/selector.jsx"></script>
 </head>
-
 <body id="bodyindex">
     <?php
     include 'header.php';
     ?>
-    <div class="universaldoos1">
-        <div class="universalblok1">
-
-        </div>
-    </div>
 </body>
-
 </html>

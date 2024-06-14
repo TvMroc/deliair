@@ -15,7 +15,45 @@
 body::-webkit-scrollbar {
     display: none;
 }
-
+/* verre reizen */
+.verrereis{
+    width: 89vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: white;
+    border: 4px rgb(200, 200, 200) solid;
+    border-radius: 40px;
+}
+.verrereizenblokje1{
+    width: 30%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+.verrereizenblokje2{
+    width: 70%;
+    height: 100%;
+    border-radius: 40px;
+    border-left: rgb(200, 200, 200) solid 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tekstvoorverreizen{
+    color: black;
+    font-size: 45px;
+    margin-left: 10px;
+}
+.landenlol{
+    color: black;
+    font-size: 30px;
+    margin-left: 10px;
+    width: 80%;
+}
 /* INDEX.PHP */
 .indexdoos1 {
     width: 100vw;
