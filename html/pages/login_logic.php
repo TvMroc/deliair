@@ -18,6 +18,7 @@ if (!$users) {
 } else {
     $_SESSION['user'] = $username;
     $_SESSION['role'] = $users['role'];
+    $_SESSION['id'] = $users['id'];
     header("Location: dashboard.php");
 }
 ?>

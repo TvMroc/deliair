@@ -9,8 +9,6 @@
                         echo '<a href="./' . $_SESSION['pages'] . 'adminpanel.php">Admin panel</a>';
                     }
                 }
-                ?>
-                <?php
                 echo '<a href="./' . $_SESSION['pages'] . 'favorites.php"><img src="../images/Star 2.jpg"></a>';
                 ?>
                 <?php
