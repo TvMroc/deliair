@@ -19,35 +19,35 @@ if (!isset($_SESSION['user'])) {
     <div class="container">
         <div class="form">
             <h1>Change Username</h1>
-            <form name="login" action="login_logic.php" method="post">
+            <form name="username" action="username_logic.php" method="post">
                 <div>
                     <label for="username">New Username:</label>
                     <input type="text" id="username" name="username" placeholder="John" required>
                 </div>
                 <div>
                     <label for="userpassword">Password:</label>
-                    <input type="userpassword" id="userpassword" name="userpassword" placeholder="!12345689_" required>
+                    <input type="password" id="userpassword" name="userpassword" placeholder="!12345689_" required>
                 </div>
                 <input type="submit" value="Change">
             </form>
 
 
             <h1>Change Email</h1>
-            <form name="login" action="login_logic.php" method="post">
+            <form name="email" action="email_logic.php" method="post">
                 <div>
                     <label for="email">New Email:</label>
                     <input type="email" id="email" name="email" placeholder="example@example.com" required>
                 </div>
                 <div>
-                    <label for="userpassword">Password:</label>
-                    <input type="userpassword" id="userpassword" name="userpassword" placeholder="!12345689_" required>
+                    <label for="mailpassword">Password:</label>
+                    <input type="password" id="mailpassword" name="mailpassword" placeholder="!12345689_" required>
                 </div>
                 <input type="submit" value="Change">
             </form>
 
 
             <h1>Change Password</h1>
-            <form name="login" action="login_logic.php" method="post">
+            <form name="password" action="password_logic.php" method="post">
                 <div>
                     <label for="newpassword">New Password:</label>
                     <input type="password" id="newpassword" name="newpassword" placeholder="!12345689_" required>
@@ -61,7 +61,7 @@ if (!isset($_SESSION['user'])) {
             
 
             <h1>Delete Account</h1>
-            <form name="login" action="login_logic.php" method="post">
+            <form name="delete" action="delete_logic.php" method="post">
                 <div>
                     <label for="delpassword">Password:</label>
                     <input type="password" id="delpassword" name="delpassword" placeholder="!12345689_" required>
