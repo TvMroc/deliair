@@ -27,6 +27,8 @@ $_SESSION['pages'] = "";
             </div>
         </div>
     </div>
+    <a href="./' . $_SESSION['pages'] . 'booking.php">Booken</a>
+
 </body>
 
 </html>
