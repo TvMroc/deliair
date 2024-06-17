@@ -7,12 +7,113 @@
 #homepage-header {
     background-image: url('../images/costa.jpg')
 }
-#bodyindex{
-    overflow: hidden; /* Hide scrollbars */
+
+#bodyindex {
+    overflow: hidden;
+    /* Hide scrollbars */
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+/* stedetrips */
+.stedetripsblokin1 {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    justify-content: center;
+}
+
+.stedetripsblokin2 {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.stedetriptekst1 {
+    color: black;
+    font-size: 35px;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.stedetriptekst2 {
+    color: black;
+    font-size: 25px;
+    margin-left: 45px;
+}
+.stedetripsdoos1 {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stedetripsblok1 {
+    width: 89vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: white;
+    border: 4px rgb(200, 200, 200) solid;
+    border-radius: 40px;
+    margin-top: 1.3%;
+}
+.boekknop{
+    border: rgb(200, 200, 200) solid 4px;
+    width: 100px;
+    height: 50px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 45px;
+    margin-top: 15px;
+    color: black;
+    border-radius: 50px;
+}
+.boekknop:hover {
+    background-color: rgb(200, 200, 200);
+}
+.backbooking{
+    margin-top: 45px;
+    font-size: 25px;
+    border: solid rgb(200, 200, 200) 4px;
+    border-radius: 50px;
+    height: 50px;
+    width: 100px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backbooking:hover {
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
+}
+#booking{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#bookingblok{
+    
 }
 /* Universal */
 .universaldoos1 {
@@ -24,19 +125,8 @@ body::-webkit-scrollbar {
     justify-content: center;
     flex-direction: column;
 }
-.universalblok1{
-    width: 89vw;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
-    flex-direction: column;
-    background-color: white;
-    border: 4px rgb(200, 200, 200) solid;
-    border-radius: 40px;
-}
-/* verre reizen */
-.verrereis{
+
+.universalblok1 {
     width: 89vw;
     height: 70vh;
     display: flex;
@@ -47,14 +137,51 @@ body::-webkit-scrollbar {
     border: 4px rgb(200, 200, 200) solid;
     border-radius: 40px;
 }
-.verrereizenblokje1{
+/* Zomervakantie */
+.zmv1 {
+    width: 70%;
+    height: 100%;
+    background-color: red;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.zmv2 {
+    width: 30%;
+    height: 100%;
+    background-color: red;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+
+/* verre reizen */
+.verrereis {
+    width: 89vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: white;
+    border: 4px rgb(200, 200, 200) solid;
+    border-radius: 40px;
+}
+
+.verrereizenblokje1 {
     width: 30%;
     height: 100%;
     border-radius: 40px;
     display: flex;
     align-items: center;
 }
-.verrereizenblokje2{
+
+.verrereizenblokje2 {
     width: 70%;
     height: 100%;
     border-radius: 40px;
@@ -63,17 +190,20 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
 }
-.tekstvoorverreizen{
+
+.tekstvoorverreizen {
     color: black;
     font-size: 45px;
     margin-left: 10px;
 }
-.landenlol{
+
+.landenlol {
     color: black;
     font-size: 30px;
     margin-left: 10px;
     width: 80%;
 }
+
 /* INDEX.PHP */
 .indexdoos1 {
     width: 100vw;
@@ -84,7 +214,8 @@ body::-webkit-scrollbar {
     justify-content: center;
     flex-direction: column;
 }
-.indexblok1{
+
+.indexblok1 {
     width: 89vw;
     height: 70vh;
     display: flex;
@@ -95,7 +226,8 @@ body::-webkit-scrollbar {
     border: 4px rgb(200, 200, 200) solid;
     border-radius: 40px;
 }
-.indexbalk1{
+
+.indexbalk1 {
     width: 100%;
     height: 200px;
     display: flex;
@@ -106,6 +238,7 @@ body::-webkit-scrollbar {
     border-bottom: 4px rgb(200, 200, 200) solid;
     border-radius: 40px;
 }
+
 .indexbalkbutton {
     width: 20%;
     height: 100%;
@@ -118,13 +251,16 @@ body::-webkit-scrollbar {
     border-radius: 40px;
     transition: background-color 0.3s;
 }
+
 .hideindexbalkbutton {
     display: none;
 }
-.indexbuttontekst1{
+
+.indexbuttontekst1 {
     font-size: 25px;
 }
-.indexbloktekst{
+
+.indexbloktekst {
     width: 1200px;
     height: 300px;
     display: flex;
@@ -132,22 +268,32 @@ body::-webkit-scrollbar {
     justify-content: center;
     flex-direction: column;
 }
-.indextekst2{
-    color: black;
-    font-size: 35px
-}
-.indextekst3{
+
+.indextekst2 {
     color: black;
     font-size: 35px
 }
 
-.indextekst3:hover {background-color: rgb(200, 200, 200);}
-.indexbalkbutton:hover {background-color: rgb(200, 200, 200);}
-.indexbalkbutton2:hover {background-color: rgb(200, 200, 200);}
+.indextekst3 {
+    color: black;
+    font-size: 35px
+}
+
+.indextekst3:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.indexbalkbutton:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.indexbalkbutton2:hover {
+    background-color: rgb(200, 200, 200);
+}
 
 
 /* Landen.php */
-.landendoos1{
+.landendoos1 {
     width: 100vw;
     height: 77.5vh;
     background-color: white;
@@ -156,7 +302,8 @@ body::-webkit-scrollbar {
     justify-content: center;
     flex-direction: column;
 }
-.landenblok1{
+
+.landenblok1 {
     width: 89%;
     height: 70vh;
     display: flex;
@@ -167,7 +314,8 @@ body::-webkit-scrollbar {
     border: 4px rgb(200, 200, 200) solid;
     border-radius: 40px;
 }
-.landenblokin1{
+
+.landenblokin1 {
     height: 100%;
     width: 30%;
     display: flex;
@@ -175,7 +323,8 @@ body::-webkit-scrollbar {
     border-radius: 40px;
     justify-content: center;
 }
-.landenblokin2{
+
+.landenblokin2 {
     height: 100%;
     width: 70%;
     display: flex;
@@ -184,26 +333,29 @@ body::-webkit-scrollbar {
     justify-content: center;
     border-radius: 40px;
 }
-.landentekst1{
+
+.landentekst1 {
     color: black;
     font-size: 35px;
     margin-left: 35px;
     margin-top: 20px;
     margin-bottom: 25px;
 }
-.landentekst2{
+
+.landentekst2 {
     color: black;
     font-size: 25px;
     margin-left: 45px;
 }
-.countryimg{
+
+.countryimg {
     width: 700px;
     border-radius: 40px;
 }
 
 
 /* Zomvervakantie.php */
-.zomervakantiedoos1{
+.zomervakantiedoos1 {
     width: 100vw;
     height: 77.5vh;
     background-color: white;
@@ -212,7 +364,8 @@ body::-webkit-scrollbar {
     justify-content: center;
     flex-direction: column;
 }
-.zomervakantieblok1{
+
+.zomervakantieblok1 {
     width: 89%;
     height: 70vh;
     display: flex;
@@ -282,7 +435,7 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 100px;
     /* placeholder colors v */
-    background-color: gray;  
+    background-color: gray;
 }
 
 .favoritesdoos1 {
@@ -311,6 +464,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
 }
+
 .form {
     display: flex;
     flex-direction: column;
@@ -323,6 +477,7 @@ body::-webkit-scrollbar {
     font-size: 32px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .form input {
     border: 0px;
     margin: 1px;
@@ -349,10 +504,12 @@ body::-webkit-scrollbar {
     height: 36px;
     font-size: 20px;
 }
+
 .form input[type="submit"]:hover {
     background-color: rgb(81, 81, 81);
     color: white;
 }
+
 .form a {
     color: white;
 }

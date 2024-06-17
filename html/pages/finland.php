@@ -21,6 +21,7 @@ $_SESSION['pages'] = "";
             <div class="landenblokin1">
                 <a class="landentekst1">Over Finland:</a>
                 <a class="landentekst2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin volutpat libero, eget ultricies augue dignissim id. In vitae pretium risus. Phasellus pulvinar lacus sodales libero rhoncus, imperdiet mollis nulla pellentesque.</a>
+                <a class="boekknop" href="booking.php">Boeken</a>
             </div>
             <div class="landenblokin2">
                 <img src="../images/finland.webp" class="countryimg">
