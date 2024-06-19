@@ -1,6 +1,6 @@
-<?php
+<?php 
 session_start();
-$_SESSION['pages'] = "pages/";
+$_SESSION['pages'] = "";
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -31,14 +31,13 @@ session_start();
     }
     ?>
     <a class="backbooking" onclick="history.back()">← Back<a>
-            <div class="universalblok1" id="bookingblok">
-                <form method="POST" action="booking.php">
-                    Land: <input type="text" name="country"><br>
-                    Start Date: <input type="date" name="start_date"><br>
-                    End Date: <input type="date" name="end_date"><br>
-                    <input type="submit" value="Book Trip">
-                </form>
-            </div>
+    <div class="universalblok1" id="bookingblok">
+        <form method="POST" action="booking.php">
+            Land: <input type="text" name="country"><br>
+            Start Date: <input type="date" name="start_date"><br>
+            End Date: <input type="date" name="end_date"><br>
+            <input type="submit" value="Book Trip">
+        </form>
+    </div>
 </body>
-
 </html>
