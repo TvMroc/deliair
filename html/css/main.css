@@ -207,7 +207,7 @@ body::-webkit-scrollbar {
 /* INDEX.PHP */
 .indexdoos1 {
     width: 100vw;
-    height: 77.5vh;
+    height: 85vh;
     background-color: white;
     display: flex;
     align-items: center;
@@ -455,6 +455,8 @@ body::-webkit-scrollbar {
     width: 50%;
     height: 100%;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
 
 

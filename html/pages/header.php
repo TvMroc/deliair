@@ -5,6 +5,11 @@
             <div>
                 <?php
                 if (isset($_SESSION['role'])) {
+                    if ($_SESSION['role'] > 1) {
+                        echo '<a href="./' . $_SESSION['pages'] . 'booking.php">Boeken</a>';
+                    }
+                }
+                if (isset($_SESSION['role'])) {
                     if ($_SESSION['role'] > 2) {
                         echo '<a href="./' . $_SESSION['pages'] . 'adminpanel.php">Admin panel</a>';
                     }

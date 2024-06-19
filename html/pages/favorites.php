@@ -21,7 +21,9 @@ $_SESSION['pages'] = "";
 
         </div>
         <div class="favoritesblok1">
-
+            <div class="favoritesdisplay1">
+                
+            </div>
         </div>
         <div class="favoritesSpace1">
             
