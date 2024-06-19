@@ -13,7 +13,6 @@ $_SESSION['pages'] = "pages/";
     <script src="./js/selector.jsx"></script>
 </head>
 <body id="bodyindex">
-    <a href="pages/booking.php">ohwfiusgrouh</a>
     <?php
     include 'pages/header.php';
     ?>
