@@ -17,5 +17,52 @@ $_SESSION['pages'] = "";
     include 'header.php';
     ?>
 </body>
+<div class="stedetripsdoos1">
+    <div class="stedetripsblok1">
+        <div class="stedetripsblokin1">
+            <a class="stedetriptekst1">Over Amsterdam:</a>
+            <a class="stedetriptekst2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin
+                volutpat libero, eget ultricies augue dignissim id. In vitae pretium risus. Phasellus pulvinar lacus
+                sodales libero rhoncus, imperdiet mollis nulla pellentesque.</a>
+            <a class="boekknop" href="booking.php">Boeken</a>
+        </div>
+        <div class="stedetripsblokin2">
+            <img src="../images/denmark.jpg" class="countryimg">
+        </div>
+    </div>
+    <div class="stedetripsblok1">
+        <div class="landenblokin1">
+            <a class="landentekst1">Over Denenmarken:</a>
+            <a class="landentekst2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin
+                volutpat libero, eget ultricies augue dignissim id. In vitae pretium risus. Phasellus pulvinar lacus
+                sodales libero rhoncus, imperdiet mollis nulla pellentesque.</a>
+        </div>
+        <div class="landenblokin2">
+            <img src="../images/denmark.jpg" class="countryimg">
+        </div>
+    </div>
+    <div class="stedetripsblok1">
+        <div class="landenblokin1">
+            <a class="landentekst1">Over Denenmarken:</a>
+            <a class="landentekst2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin
+                volutpat libero, eget ultricies augue dignissim id. In vitae pretium risus. Phasellus pulvinar lacus
+                sodales libero rhoncus, imperdiet mollis nulla pellentesque.</a>
+        </div>
+        <div class="landenblokin2">
+            <img src="../images/denmark.jpg" class="countryimg">
+        </div>
+    </div>
+    <div class="stedetripsblok1">
+        <div class="landenblokin1">
+            <a class="landentekst1">Over Denenmarken:</a>
+            <a class="landentekst2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin
+                volutpat libero, eget ultricies augue dignissim id. In vitae pretium risus. Phasellus pulvinar lacus
+                sodales libero rhoncus, imperdiet mollis nulla pellentesque.</a>
+        </div>
+        <div class="landenblokin2">
+            <img src="../images/denmark.jpg" class="countryimg">
+        </div>
+    </div>
+</div>
 
 </html>

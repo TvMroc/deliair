@@ -18,7 +18,12 @@ $_SESSION['pages'] = "";
     ?>
     <div class="universaldoos1">
         <div class="universalblok1">
+            <div class="zmv1">
 
+            </div>
+            <div class="zmv2">
+                
+            </div>
         </div>
     </div>
 </body>
