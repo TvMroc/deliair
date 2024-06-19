@@ -31,14 +31,39 @@ session_start();
     }
     ?>
     <a class="backbooking" onclick="history.back()">← Back<a>
-            <div class="universalblok1" id="bookingblok">
-                <form method="POST" action="booking.php">
-                    Land: <input type="text" name="country"><br>
-                    Start Date: <input type="date" name="start_date"><br>
-                    End Date: <input type="date" name="end_date"><br>
-                    <input type="submit" value="Book Trip">
-                </form>
-            </div>
+    <div class="universalblok1" id="bookingblok">
+        <form method="POST" action="booking.php">
+            Land: <input type="text" name="country"><br>
+            Start Date: <input type="date" name="start_date"><br>
+            End Date: <input type="date" name="end_date"><br>
+            <input type="submit" value="Book Trip">
+        </form>
+    </div>
 </body>
+</htm<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+</head>
+<body>
 
+<?php
+    include 'header.php';
+?>
+
+<?php 
+
+    $username = $_POST["username"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+    $stmt = $connection->prepare("INSERT INTO users (username, email, password) VALUES (:username, :email, :password)");
+    $stmt->bindParam(":username", $username);
+    $stmt->bindParam(":email", $email);
+    $stmt->bindParam(":password", $password);
+    $stmt->execute();
+?>
+</body>
 </html>
