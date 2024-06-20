@@ -18,7 +18,7 @@ if (!isset($_SESSION['user'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <title>DeliAir Admin</title>
-    <script src="search.js"></script>
+    <script src="../js/search.js"></script>
 </head>
 <body>
     <?php
@@ -28,7 +28,7 @@ if (!isset($_SESSION['user'])) {
         <h1>yes</h1>
     </div>
     
-    <input class="search" type="text" placeholder="search" id="search" onkeyup="bookSearch('booking-item')">
+    <input class="search" type="text" placeholder="search" id="search" onkeyup="bookSearch('booking-item')"><br>
 
     <?php
         include 'conn.php';
@@ -37,7 +37,7 @@ if (!isset($_SESSION['user'])) {
         $stmt = $connection->query($sql);
 
         while ($row = $stmt->fetch()) {
-            echo '<div class="booking-item">';
+            echo '<div id="' . $row['country'] . '" class="booking-item">';
             echo '<p">' . $row['country'] . '</p>';
             echo '<p>' . $row['start_date'] . '</p><p>' . $row['end_date'] . '</p>';
             echo '<p>' . $row['id'] . '</p><p>' . $row['booking_id'] . '</p>';
