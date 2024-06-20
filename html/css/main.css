@@ -50,6 +50,7 @@ body::-webkit-scrollbar {
     font-size: 25px;
     margin-left: 45px;
 }
+
 .stedetripsdoos1 {
     width: 100vw;
     height: auto;
@@ -72,7 +73,8 @@ body::-webkit-scrollbar {
     border-radius: 40px;
     margin-top: 1.3%;
 }
-.boekknop{
+
+.boekknop {
     border: rgb(200, 200, 200) solid 4px;
     width: 100px;
     height: 50px;
@@ -86,10 +88,12 @@ body::-webkit-scrollbar {
     color: black;
     border-radius: 50px;
 }
+
 .boekknop:hover {
     background-color: rgb(200, 200, 200);
 }
-.backbooking{
+
+.backbooking {
     margin-top: 45px;
     font-size: 25px;
     border: solid rgb(200, 200, 200) 4px;
@@ -102,19 +106,21 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
 }
+
 .backbooking:hover {
     background-color: rgb(200, 200, 200);
     cursor: pointer;
 }
-#booking{
+
+#booking {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-#bookingblok{
-    
-}
+
+#bookingblok {}
+
 /* Universal */
 .universaldoos1 {
     width: 100vw;
@@ -137,6 +143,7 @@ body::-webkit-scrollbar {
     border: 4px rgb(200, 200, 200) solid;
     border-radius: 40px;
 }
+
 /* Zomervakantie */
 .zmv1 {
     width: 70%;
