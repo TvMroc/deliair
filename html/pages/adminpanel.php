@@ -18,28 +18,32 @@ if (!isset($_SESSION['user'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <title>DeliAir Admin</title>
+    <script src="search.js"></script>
 </head>
 <body>
     <?php
     include 'header.php';
     ?>
     <div>
-        <h1></h1>
-        <form name="register" action="register_logic.php" method="post">
-            <div>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="John" required>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="example@example.com" required>
-            </div>
-            <div>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="!12345689_" required>
-            </div>
-            <input type="submit" value="Register">
-        </form>
+        <h1>yes</h1>
     </div>
+    
+    <input class="search" type="text" placeholder="search" id="search" onkeyup="bookSearch('booking-item')">
+
+    <?php
+        include 'conn.php';
+
+        $sql = 'SELECT booking_id, id, country, start_date, end_date FROM bookings';
+        $stmt = $connection->query($sql);
+
+        while ($row = $stmt->fetch()) {
+            echo '<div class="booking-item">';
+            echo '<p">' . $row['country'] . '</p>';
+            echo '<p>' . $row['start_date'] . '</p><p>' . $row['end_date'] . '</p>';
+            echo '<p>' . $row['id'] . '</p><p>' . $row['booking_id'] . '</p>';
+            echo '<a href="booking_delete.php?id=' . $row['booking_id'] . '">cancel</a>';
+            echo '</div>';
+        }
+        ?>
 </body>
 </html>
