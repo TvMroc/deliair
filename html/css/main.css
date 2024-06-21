@@ -545,3 +545,40 @@ body::-webkit-scrollbar {
 
 
 /* Admin panel */
+
+/* Overige */
+
+.overigdoos1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.overigspace1 {
+    height: 100%;
+    width: 25%;
+    background-color: gray;
+}
+
+.overigdoos2 {
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+}
+
+.abouttextbox {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutustxt {
+    font-size: 30px;
+}
+
+.largeabouttextbox {
+    padding-left: 40px;
+    padding-right: 40px
+}
