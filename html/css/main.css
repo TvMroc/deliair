@@ -193,6 +193,7 @@ body::-webkit-scrollbar {
     height: 100%;
     border-radius: 40px;
     border-left: rgb(200, 200, 200) solid 4px;
+    border-right: rgb(200, 200, 200) solid 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,6 +211,15 @@ body::-webkit-scrollbar {
     margin-left: 10px;
     width: 80%;
 }
+.description {
+    color: rgba(255, 255, 255, 0);
+    height: 0px;
+    width: 0px;
+}
+.land {
+    display: none;
+}
+
 
 /* INDEX.PHP */
 .indexdoos1 {
@@ -448,8 +458,9 @@ body::-webkit-scrollbar {
 .favoritesdoos1 {
     display: flex;
     flex-direction: row;
-    height: 500px;
-    width: 1536px;
+    justify-content: space-between;
+    height: 85vh;
+    width: 100%;
 }
 
 .favoritesSpace1 {
