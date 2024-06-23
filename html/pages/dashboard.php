@@ -36,6 +36,19 @@ if (!isset($_SESSION['user'])) {
             }
             ?>
         </div>
+        <div>
+            <h1>Een recensie schrijven</h1>
+            <form name="recensie" action="recensie_logic.php" method="post">
+                <div>
+                    <label for="country">Land:</label>
+                    <input type="text" id="country" name="country" placeholder="Nederland" required>
+                </div>
+                <div>
+                    <input type="text" id="recensie" name="recensie" srequired>
+                </div>
+                <input type="submit" value="Versturen">
+            </form>
+        </div>
         <a href="random.php">r</a>
     </div>
 </body>

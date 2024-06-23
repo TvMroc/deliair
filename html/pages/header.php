@@ -6,6 +6,7 @@
                 <?php
                 if (isset($_SESSION['user'])) {
                     echo '<a href="./' . $_SESSION['pages'] . 'booking.php">Boeken</a>';
+                    echo '<a href="./' . $_SESSION['pages'] . 'dashboard.php">dashboard</a>';
                 }
                 if (isset($_SESSION['role'])) {
                     if ($_SESSION['role'] > 2) {

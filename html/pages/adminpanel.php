@@ -124,22 +124,44 @@ if (!isset($_SESSION['user'])) {
             </form>
         </div>
     </div>
-    <h1>Gebookte vluchten</h1>
-    <input class="search" type="text" placeholder="search" id="search" onkeyup="bookSearch('booking-item')"><br>
-    <?php
-        include 'conn.php';
+    <div class="adminforms">
+    <div>
+        <h1>Gebookte vluchten</h1>
+        <input class="search" type="text" placeholder="search" id="search" onkeyup="bookSearch('booking-item')"><br>
+        <?php
+            include 'conn.php';
 
-        $sql = 'SELECT booking_id, id, country, start_date, end_date FROM bookings';
-        $stmt = $connection->query($sql);
+            $sql = 'SELECT booking_id, id, country, start_date, end_date FROM bookings';
+            $stmt = $connection->query($sql);
 
-        while ($row = $stmt->fetch()) {
-            echo '<div id="' . $row['country'] . '" class="booking-item">';
-            echo '<p">' . $row['country'] . '</p>';
-            echo '<p>' . $row['start_date'] . '</p><p>' . $row['end_date'] . '</p>';
-            echo '<p>' . $row['id'] . '</p><p>' . $row['booking_id'] . '</p>';
-            echo '<a href="booking_delete.php?id=' . $row['booking_id'] . '">cancel</a>';
-            echo '</div>';
-        }
-    ?>
+            while ($row = $stmt->fetch()) {
+                echo '<div id="' . $row['country'] . '" class="booking-item">';
+                echo '<p">' . $row['country'] . '</p>';
+                echo '<p>' . $row['start_date'] . '</p><p>' . $row['end_date'] . '</p>';
+                echo '<p>' . $row['id'] . '</p><p>' . $row['booking_id'] . '</p>';
+                echo '<a href="booking_delete.php?id=' . $row['booking_id'] . '">cancel</a>';
+                echo '</div>';
+            }
+        ?>
+    </div>
+    <div class="spacer"></div>
+    <div>
+        <h1>Recencies</h1>
+        <?php
+            include 'conn.php';
+            $sql = 'SELECT country, text, recensie_id FROM recensies';
+            $stmt = $connection->query($sql);
+
+            while ($row = $stmt->fetch()) {
+                echo '<div id="' . $row['country'] . '">';
+                echo '<p">' . $row['country'] . '</p>';
+                echo '<p>' . $row['text'] . '</p>';
+                echo '<a href="recensie_delete.php?id=' . $row['recensie_id'] . '">Remove </a>';
+                echo '<a href="recensie_validate.php?id=' . $row['recensie_id'] . '">Validate</a>';
+                echo '</div>';
+            }
+        ?>
+    </div>
+    </div>
 </body>
 </html>

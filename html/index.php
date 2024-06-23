@@ -27,7 +27,7 @@ $_SESSION['pages'] = "pages/";
                 <div onclick="selection('hideindexbalkbutton', 'indexbalkbutton1')" class="indexbalkbutton"><a
                         class="indexbuttontekst1">Landen</a></div>
                 <div onclick="selection('hideindexbalkbutton', 'indexbalkbutton2')" class="indexbalkbutton"><a
-                        class="indexbuttontekst1">-</a></div>
+                        class="indexbuttontekst1">Recensies</a></div>
                 <div onclick="selection('hideindexbalkbutton', 'indexbalkbutton3')" class="indexbalkbutton"><a
                         class="indexbuttontekst1">-</a></div>
                 <div onclick="selection('hideindexbalkbutton', 'indexbalkbutton4')" class="indexbalkbutton"><a
@@ -43,7 +43,20 @@ $_SESSION['pages'] = "pages/";
                                 href="pages/indonesie.php">Indonesie</a></div>
                 </div>
                 <div class="indexbalkbutton2 hideindexbalkbutton">
-                    <div class="indexbloktekst"><a class="indextekst2">-</a></div>
+                    <div class="indexbloktekst">
+                        <?php
+                            include './pages/conn.php';
+                            $stmt = $connection->prepare("SELECT country, text FROM recensies WHERE validated=:state");
+                            $stmt->execute(['state' => true]); 
+                            $data = $stmt->fetchAll();
+                            foreach ($data as $row) {
+                                echo '<div id="' . $row['country'] . '" class="recensie-item">';
+                                echo '<h1">' . $row['country'] . '</h1>';
+                                echo '<p>' . $row['text'] . '</p>';
+                                echo '</div>';
+                            }
+                        ?>
+                    </div>
                 </div>
                 <div class="indexbalkbutton3 hideindexbalkbutton">
                     <div class="indexbloktekst"><a class="indextekst2">-</a></div>
