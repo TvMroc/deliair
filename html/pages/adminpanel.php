@@ -27,7 +27,7 @@ if (!isset($_SESSION['user'])) {
     <div>
         <div class="adminforms">
             <form name="booking_modify" action="booking_modify_logic.php" method="post">
-                <h1>Vluchten aanpassen</h1>
+                <h1>Reizen aanpassen</h1>
                 <div>
                     <label for="bookingid">Booking id:</label>
                     <input type="text" id="bookingid" name="bookingid" placeholder="1" required>
@@ -51,8 +51,8 @@ if (!isset($_SESSION['user'])) {
                 <input type="submit" value="Aanpassen">
             </form>
 
-            <form name="booking_modify" action="booking_create_logic.php" method="post">
-                <h1>Vluchten aanmaken</h1>
+            <form name="booking_create" action="booking_create_logic.php" method="post">
+                <h1>Reizen aanmaken</h1>
                 <div>
                     <label for="bookingid">Booking id:</label>
                     <input type="text" id="bookingid" name="bookingid" placeholder="1" required>
@@ -74,6 +74,53 @@ if (!isset($_SESSION['user'])) {
                     <input type="date" id="einddatum" name="einddatum" placeholder="2024-06-30" required>
                 </div>
                 <input type="submit" value="Aanmaken">
+            </form>
+            
+            <form name="register" action="register_logic.php" method="post">
+                <h1>Account aanmaken</h1>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="John" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="!12345689_" required>
+                </div>
+                <input type="submit" value="Aanmaken">
+            </form>
+
+            <form name="delete" action="account_delete_logic.php" method="post">
+                <h1>Account deleten</h1>
+                <div>
+                    <label for="id">id:</label>
+                    <input type="text" id="id" name="id" placeholder="1" required>
+                </div>
+                <input type="submit" value="Delete">
+            </form>
+
+            <form name="modify" action="account_modify_logic.php" method="post">
+                <h1>Account aanpassen</h1>
+                <div>
+                    <label for="id">id:</label>
+                    <input type="text" id="id" name="id" placeholder="1" required>
+                </div>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="John" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="!12345689_" required>
+                </div>
+                <input type="submit" value="Aanpassen">
             </form>
         </div>
     </div>

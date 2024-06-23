@@ -2,9 +2,6 @@
 session_start();
 include 'conn.php';
 
-if (!isset($_SESSION['user'])) {
-    header("Location: login.php");
-}
 if (empty($_POST["bookingid"]) || empty($_POST["userid"]) || empty($_POST["land"]) || empty($_POST["startdatum"]) || empty($_POST["einddatum"])) {
     header("Location: adminpanel.php");
     exit();
