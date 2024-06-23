@@ -1,6 +1,9 @@
 <?php
 session_start();
 $_SESSION['pages'] = "";
+if (!isset($_SESSION['user'])) {
+    header("Location: login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,58 +21,22 @@ $_SESSION['pages'] = "";
     ?>
     <div class="container">
         <div class="form">
-            <h1>Change Username</h1>
-            <form name="username" action="username_logic.php" method="post">
-                <div>
-                    <label for="username">New Username:</label>
-                    <input type="text" id="username" name="username" placeholder="John" required>
-                </div>
-                <div>
-                    <label for="userpassword">Password:</label>
-                    <input type="password" id="userpassword" name="userpassword" placeholder="!12345689_" required>
-                </div>
-                <input type="submit" value="Change">
-            </form>
-
-
-            <h1>Change Email</h1>
-            <form name="email" action="email_logic.php" method="post">
-                <div>
-                    <label for="email">New Email:</label>
-                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
-                </div>
-                <div>
-                    <label for="mailpassword">Password:</label>
-                    <input type="password" id="mailpassword" name="mailpassword" placeholder="!12345689_" required>
-                </div>
-                <input type="submit" value="Change">
-            </form>
-
-
-            <h1>Change Password</h1>
-            <form name="password" action="password_logic.php" method="post">
-                <div>
-                    <label for="newpassword">New Password:</label>
-                    <input type="password" id="newpassword" name="newpassword" placeholder="!12345689_" required>
-                </div>
-                <div>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" placeholder="!12345689_" required>
-                </div>
-                <input type="submit" value="Change">
-            </form>
-            
-
-            <h1>Delete Account</h1>
-            <form name="delete" action="delete_logic.php" method="post">
-                <div>
-                    <label for="delpassword">Password:</label>
-                    <input type="password" id="delpassword" name="delpassword" placeholder="!12345689_" required>
-                </div>
-                <input type="submit" value="Delete">
-            </form>
-            <a href="logout.php">Logout</a>
+        <?php
+            include 'conn.php';
+            $id = $_SESSION['id'];
+            $stmt = $connection->prepare("SELECT booking_id, id, country, start_date, end_date FROM bookings WHERE id=:id");
+            $stmt->execute(['id' => $id]); 
+            $data = $stmt->fetchAll();
+            foreach ($data as $row) {
+                echo '<div id="' . $row['country'] . '" class="booking-item">';
+                echo '<p">' . $row['country'] . '</p>';
+                echo '<p>Van ' . $row['start_date'] . ' tot ' . $row['end_date'] . '</p>';
+                echo '<a href="booking_delete.php?id=' . $row['booking_id'] . '">cancel</a>';
+                echo '</div>';
+            }
+            ?>
         </div>
+        <a href="random.php">r</a>
     </div>
 </body>
 

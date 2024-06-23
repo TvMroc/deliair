@@ -2,6 +2,9 @@
 session_start();
 include 'conn.php';
 
+if (!isset($_SESSION['user'])) {
+    header("Location: login.php");
+}
 if (empty($_POST["delpassword"])) {
     header("Location: account.php");
     exit();

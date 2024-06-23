@@ -23,7 +23,7 @@ $_SESSION['pages'] = "";
                 <a class="tekstvoorverreizen">Dit zijn de landen waar wij je naar uit kunnen vliegen.</a>
             </div>
             <div class="verrereizenblokje2">
-                <a class="landenlol">Finland, Sweden, Denenmarken, Indonesie, Afrika, Spanje, Italie, Groot-Brittanie, Ierland, Schotland, Wales, Ijsland, Dubai, Turkije, UAE, Saudi Arabie, Qatar, Singapore, Kenia, Japan. </a>
+                <p class="landenlol">Finland, Sweden, Denenmarken, Indonesie, Afrika, Spanje, Italie, Groot-Brittanie, Ierland, Schotland, Wales, Ijsland, Dubai, Turkije, UAE, Saudi Arabie, Qatar, Singapore, Kenia, Japan
                 <?php
                     include 'conn.php';
 
@@ -31,24 +31,12 @@ $_SESSION['pages'] = "";
                     $stmt = $connection->query($sql);
 
                     while ($row = $stmt->fetch()) {
-                        echo '<div id="' . $row['name'] . '" onclick="selection(\'land\', \'land' . $row['id'] . '\')">';
-                        echo '<p>' . $row['name'] . '</p>';
-                        echo '</div>';
+                        echo ', ' . $row['name'];
                     }
                 ?>
+                </p>
             </div>
-            <?php
-                    include 'conn.php';
-
-                    $sql = 'SELECT name, id, description FROM locations';
-                    $stmt = $connection->query($sql);
-
-                    while ($row = $stmt->fetch()) {
-                        echo '<p class="land" id="land' . $row['id'] . '">' . $row['description'] . '</p>';
-                    }
-                ?>
         </div>
     </div>
 </body>
-
 </html>

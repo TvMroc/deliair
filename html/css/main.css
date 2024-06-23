@@ -193,7 +193,6 @@ body::-webkit-scrollbar {
     height: 100%;
     border-radius: 40px;
     border-left: rgb(200, 200, 200) solid 4px;
-    border-right: rgb(200, 200, 200) solid 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,14 +209,6 @@ body::-webkit-scrollbar {
     font-size: 30px;
     margin-left: 10px;
     width: 80%;
-}
-.description {
-    color: rgba(255, 255, 255, 0);
-    height: 0px;
-    width: 0px;
-}
-.land {
-    display: none;
 }
 
 
@@ -459,7 +450,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 85vh;
+    height: 84vh;
     width: 100%;
 }
 
@@ -545,3 +536,9 @@ body::-webkit-scrollbar {
 
 
 /* Admin panel */
+.adminforms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 50px;
+}

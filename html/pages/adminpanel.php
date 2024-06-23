@@ -25,11 +25,60 @@ if (!isset($_SESSION['user'])) {
     include 'header.php';
     ?>
     <div>
-        <h1>yes</h1>
-    </div>
-    
-    <input class="search" type="text" placeholder="search" id="search" onkeyup="bookSearch('booking-item')"><br>
+        <div class="adminforms">
+            <form name="booking_modify" action="booking_modify_logic.php" method="post">
+                <h1>Vluchten aanpassen</h1>
+                <div>
+                    <label for="bookingid">Booking id:</label>
+                    <input type="text" id="bookingid" name="bookingid" placeholder="1" required>
+                </div>
+                <div>
+                    <label for="userid">User id:</label>
+                    <input type="text" id="userid" name="userid" placeholder="1" required>
+                </div>
+                <div>
+                    <label for="land">Land:</label>
+                    <input type="text" id="land" name="land" placeholder="nederland" required>
+                </div>
+                <div>
+                    <label for="startdatum">Start datum:</label>
+                    <input type="date" id="startdatum" name="startdatum" placeholder="2024-06-12" required>
+                </div>
+                <div>
+                    <label for="einddatum">Eind datum:</label>
+                    <input type="date" id="einddatum" name="einddatum" placeholder="2024-06-30" required>
+                </div>
+                <input type="submit" value="Aanpassen">
+            </form>
 
+            <form name="booking_modify" action="booking_create_logic.php" method="post">
+                <h1>Vluchten aanmaken</h1>
+                <div>
+                    <label for="bookingid">Booking id:</label>
+                    <input type="text" id="bookingid" name="bookingid" placeholder="1" required>
+                </div>
+                <div>
+                    <label for="userid">User id:</label>
+                    <input type="text" id="userid" name="userid" placeholder="1" required>
+                </div>
+                <div>
+                    <label for="land">Land:</label>
+                    <input type="text" id="land" name="land" placeholder="nederland" required>
+                </div>
+                <div>
+                    <label for="startdatum">Start datum:</label>
+                    <input type="date" id="startdatum" name="startdatum" placeholder="2024-06-12" required>
+                </div>
+                <div>
+                    <label for="einddatum">Eind datum:</label>
+                    <input type="date" id="einddatum" name="einddatum" placeholder="2024-06-30" required>
+                </div>
+                <input type="submit" value="Aanmaken">
+            </form>
+        </div>
+    </div>
+    <h1>Gebookte vluchten</h1>
+    <input class="search" type="text" placeholder="search" id="search" onkeyup="bookSearch('booking-item')"><br>
     <?php
         include 'conn.php';
 
@@ -44,6 +93,6 @@ if (!isset($_SESSION['user'])) {
             echo '<a href="booking_delete.php?id=' . $row['booking_id'] . '">cancel</a>';
             echo '</div>';
         }
-        ?>
+    ?>
 </body>
 </html>

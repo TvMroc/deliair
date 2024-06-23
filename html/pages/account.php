@@ -17,6 +17,7 @@ if (!isset($_SESSION['user'])) {
 <body>
     <a class="back" onclick="history.back()">← Back<a>
     <div class="container">
+        <a href="dashboard.php">Dashboard</a>
         <div class="form">
             <h1>Change Username</h1>
             <form name="username" action="username_logic.php" method="post">
@@ -68,6 +69,7 @@ if (!isset($_SESSION['user'])) {
                 </div>
                 <input type="submit" value="Delete">
             </form>
+            <a href="dashboard.php">Dashboard</a>
             <a href="logout.php">Logout</a>
         </div>
     </div>
