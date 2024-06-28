@@ -5,6 +5,7 @@
             <div>
                 <?php
                 if (isset($_SESSION['user'])) {
+                    echo '<a href="./' . $_SESSION['pages'] . 'search.php">🔎</a>';
                     echo '<a href="./' . $_SESSION['pages'] . 'booking.php">Boeken</a>';
                     echo '<a href="./' . $_SESSION['pages'] . 'dashboard.php">dashboard</a>';
                 }
@@ -36,8 +37,7 @@
             echo '<a href="./' . $_SESSION['pages'] . 'verrereizen.php">Verre Reizen</a>';
             echo '<a href="./' . $_SESSION['pages'] . 'vliegtickets.php">Vliegtickets</a>';
             echo '<a href="./' . $_SESSION['pages'] . 'stedetrips.php">Stedetrips</a>';
-            echo '<a href="./' . $_SESSION['pages'] . 'overig.php">Overig</a>';
-            ?>
+            echo '<a href="./' . $_SESSION['pages'] . 'overig.php">Overig</a>';            ?>
         </div>
     </div>
 </header>
