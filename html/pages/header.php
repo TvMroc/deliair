@@ -5,19 +5,18 @@
             <div>
                 <?php
                 if (isset($_SESSION['user'])) {
-                    echo '<a href="./' . $_SESSION['pages'] . 'search.php">🔎</a>';
-                    echo '<a href="./' . $_SESSION['pages'] . 'booking.php">Boeken</a>';
-                    echo '<a href="./' . $_SESSION['pages'] . 'dashboard.php">dashboard</a>';
+                    echo '<a href="./' . $_SESSION['pages'] . 'search.php"><img src="../images/search.png"></a>';
+                    echo '<a href="./' . $_SESSION['pages'] . 'dashboard.php"><img src="../images/dashboard.png"></a>';
                 }
                 if (isset($_SESSION['role'])) {
                     if ($_SESSION['role'] > 2) {
                         echo '<a href="./' . $_SESSION['pages'] . 'adminpanel.php">Admin panel</a>';
                     }
                 }
-                echo '<a href="./' . $_SESSION['pages'] . 'favorites.php"><img src="../images/Star 2.jpg"></a>';
-                ?>
-                <?php
-                echo '<a href="./' . $_SESSION['pages'] . 'shoppingcart.php"><img src="../images/Rectangle24.png"></a>';
+                if (isset($_SESSION['user'])) {
+                    echo '<a href="./' . $_SESSION['pages'] . 'favorites.php"><img src="../images/Star 2.jpg"></a>';
+                    echo '<a href="./' . $_SESSION['pages'] . 'booking.php"><img src="../images/Rectangle24.png"></a>';
+                }
                 ?>
                 <?php
                 if (isset($_SESSION['user'])) {

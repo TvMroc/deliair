@@ -16,6 +16,7 @@ session_start();
     <?php
     if (!isset($_SESSION['id'])) {
         die("You need to login first.");
+        
     }
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
